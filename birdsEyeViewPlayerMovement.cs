@@ -41,7 +41,7 @@ public class playerMovement : MonoBehaviour
             vec.y = 0;
         }
 
-        vec = vec.normalized;
+        vec = vec.normalized; //Keeps the movement speed constant even on diagonal movement
         transform.position += new Vector3(vec.x, vec.y, 0) * speed * Time.deltaTime;
     }
 }
